@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="example_page_style.css">
+    </head>
+
+    <body>
+        <h1>HTML Links</h1>
+        <p> Links allow connection to other web pages. The attributes can control how links work. The target attribute
+            controls how the page opens
+        </p>
+
+        <a href="html_formatting.html" target=_blank> "Standard hyperlink to one of the other pages"</a>
+        <ol>
+            <li>_blank - Opens document in a new tab or window</li>
+            <li>_self - Default, opens in the same tab or window in which it was clicked</li>
+            <li>_parent - Opens the documnet in the parent frame</li>
+            <li>_top - Opens the document in the full body of the window</li>
+        </ol>
+
+        <a href="html_formatting.html" target="_top">Link for top attribute</a>
+
+        <h2> Use an Image as a link</h2>
+        <p>To use an image as a link, put an image element inside a link element</p>
+
+        <a href = "https://www.pinkbike.com" title="Link to pink bike">
+            <img src="/Users/david/Desktop/Bike.jpg" alt="My painful bike" width="200" height="142">
+        </a>
+
+        <h2> Use an Image to open a users email app</h2>
+        <a href="mailto:someone@example.com">Send email</a>
+
+        <h2> Use button to link with a bit of javascript </h2>
+        <button onclick="document.location='https://www.pinkbike.com'">Go To Pink Bike!</button>
+
+
+
+
+
+
+    </body>
+</html>

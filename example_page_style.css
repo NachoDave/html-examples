@@ -1,0 +1,35 @@
+body {
+    background-color: powderblue;
+  }
+  h1 {
+    color: blue;
+    font-size: 50;
+    border: 4px solid red;
+    background-color:darkseagreen;
+  }
+  h2 {
+    color:gold;
+    font-size: 40;
+    background-color: black;
+  }
+
+  p {
+    color: black;
+    background-color: ivory;
+    border: 3px solid blue; /*Puts a border around the element*/
+    padding: 10px; /*Pads around the text in an element*/
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse; /*Makes border only 1 line thick*/
+
+  }
+
+  td {
+    background-color: darkgray;
+  }
+
+  th {
+    background-color: pink;
+  }
