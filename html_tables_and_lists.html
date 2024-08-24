@@ -10,7 +10,8 @@
         <p>
             Tables are defined with the &lttable&gt element. &ltth&gt defines a 'header' data element. There are lots of different border styles that can 
             be defined using the <i>border</i> attribute. <i>width</i> of a cell can be set, % will define width 
-            as % of parent element (in this case the body element).
+            as % of parent element (in this case the body element). To make zebra stripe columns or rows, 
+            add <i>:nth-child(even)</i> to the <i>td</i> or <i>tr</i> entry in the stylesheet.
         </p>
 
         <table style="width:100%">
@@ -40,6 +41,48 @@
             </tr>
             <caption style="caption-side:bottom;font-size: 12px;"><i>Basic elements of a HTML table</i></caption>
         </table>
+
+        <h2>Table with colspan and rowspan attributes</h2>
+        <p>You can make cells span mulitple rows or columns using the <i>colspan</i> and <i>rowspan</i> attributes
+        to specify the number of rows and columns a cell should span. </p>
+
+        <table>
+            <tr>
+                <th colspan="2">colspan = 2</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <caption style="caption-side:bottom;font-size: 12px;">Example of a colspan table</caption>
+        </table>
+
+        </span>
+
+        <!--Some list-->
+        <h1>Lists</h1>
+        <p>Lists in HTML can either be unordered, &ltul&gt, ordered &ltol&gt or description. </p>
+
+        <h2 >Ordered list</h2>
+        <ol title = "Ordered list">
+            <li>item 1</li>
+            <li>item 2</li>
+
+        </ol>
+
+        <h2>Unordered list</h2>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+        </ul>
+
+        <h2>Description list</h2>
+        <dl>
+            <dt>Coffee</dt>
+            <dd>Hot drink made from coffe beans</dd>
+            <dt>Tea</dt>
+            <dd>Hot drink made from tea leaves</dd>
+        </dl>
 
 
     </body>
