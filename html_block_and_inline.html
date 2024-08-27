@@ -3,6 +3,26 @@
     <head>
         <title>block and inline</title>
         <link rel="stylesheet" href="example_page_style.css">
+        <style>
+            div {
+              background-color: #FFF4A3;
+            }
+    div.mycontainer {
+      width:100%;
+      overflow:auto;
+    }
+    div.mycontainer div {
+      width:30%;  
+      float:left;
+      margin: 1%;
+    }
+    div.mycontainer p {
+        background-color: blueviolet;
+        border: 0px;
+        margin: 1px;
+    }
+    </style>
+            <body>
     </head>
     <body>
         <h1>Block level Elements</h1>
@@ -22,5 +42,38 @@
         <p>The &ltspan&gt element can be used to style a section of text in a paragraph</p>
         <p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has 
             <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
+
+        <div>
+            <h3>This heading and the following two paragraphs are in a &ltdiv&gt element to group them</h3>
+            <p>I'm in a div</p>
+            <p>I'm in the div too!</p>
+        </div>
+
+        <div style="width:300px;margin:auto">
+            <p>hello</p>
+        </div>
+
+        <p>You can use the float property to put &ltdiv&gt blocks side by side.</p>
+        <div class="mycontainer">
+
+            <div style="background-color:#FFF4A3;">
+              <h2>London</h2>
+              <p>London is the capital city of England.</p>
+              <p>London has over 13 million inhabitants.</p>
+            </div>
+            
+            <div style="background-color:#FFC0C7;">
+              <h2>Oslo</h2>
+              <p>Oslo is the capital city of Norway.</p>
+              <p>Oslo has over 600.000 inhabitants.</p>
+            </div>
+            
+            <div style="background-color:#D9EEE1;">
+              <h2>Rome</h2>
+              <p>Rome is the capital city of Italy.</p>
+              <p>Rome has almost 3 million inhabitants.</p>
+            </div>
+          
+          </div>
     </body>
 </html>
