@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="example_page_style.css">
+        <style>
+            .city {
+                background-color: tomato;
+                color: white;
+                border: 2px solid black;
+                margin: 20px;
+                padding: 20px;
+        }
+
+        #myparagraphid {
+            background-color: lightblue;
+            color:darkgreen;
+            text-align: center;
+        }
+        </style> 
+
+<script>
+    function myFunction() {
+      var x = document.getElementsByClassName("city");
+      for (var i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+    }
+    </script>
+
+<script>
+    function myFunction_show() {
+      var x = document.getElementsByClassName("city");
+      for (var i = 0; i < x.length; i++) {
+        x[i].style.display = "block";
+      }
+    }
+    </script>
+
+    </head>
+    <body>
+        <p><a href="#linkid">Jump to another part of the page!</a></p>
+
+        <h1>Classes</h1>
+        <p>
+            THe html class attribute can be used to assign a 'class' to an element and 
+            then use css to style it, or javascript to modify it. To create a class in css use
+            following structure:
+            <div>.classname</div>
+            
+        </p>
+
+        <div class="city">
+            <h2>London</h2>
+            <p>London is the capital of England.</p>
+          </div>
+          
+          <div class="city">
+            <h2>Paris</h2>
+            <p>Paris is the capital of France.</p>
+          </div>
+          
+          <div class="city">
+            <h2>Tokyo</h2>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+
+          <h2>Use of The class Attribute in JavaScript</h2>
+            <p>Click the button to hide all elements with class name "city":</p>
+
+            <button onclick="myFunction()">Hide elements of city class</button>
+            <button onclick="myFunction_show()">Show elements of city class</button>
+
+    <h1>Ids</h1>
+    <p>An Id is a unique to a html element, it can only be used by one element. It can be used to style it and access
+        with javascript. In css, IDs start with a #
+    </p>
+s
+    <p id="myparagraphid">This paragraph is styled with an ID in the head section</p>
+
+    <p id="linkid">Ids can be used to link to another element on a web page! You linked to here!</p>
+
+    </body>
+</html>
