@@ -1,21 +1,60 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="example_page_style.css">
+        <link rel="icon" type="image/x-icon" href="/Users/david/Desktop/bike_favicon.ico">
 
     </head>
 
     <body>
+
+        <button type="button"
+        onclick="document.getElementById('datedemo').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+
         <h2>Use JavaScript to Change Text</h2>
         <p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
-        
-
-
+    
         <p id="demo"></p>
+       
 
         <script>
             document.getElementById("demo").innerHTML = "Hello JavaScript!";
         </script>
 
+        <h2 class="h2">Use javscript to display time and date </h2>
+
+        <p id="datedemo"></p>
+
+        <h2 class="h2">Use javscript to change style of element </h2>
+
+        <button onclick="toggleBkCol()">Change Background Color</button>
+
+        <p id="colPar" style="background-color: red;">This is the paragraph that we're changing the background color of!</p>
+        
+        <script>
+            function toggleBkCol() {
+                // Get the paragraph element
+                const paragraph = document.getElementById("colPar");
+
+                const currentColor = window.getComputedStyle(paragraph).backgroundColor;
+        
+                // Check the current background color and toggle it
+                if (paragraph.style.backgroundColor === "red") {
+                    paragraph.style.backgroundColor = "blue";
+                } else {
+                    paragraph.style.backgroundColor = "red";
+                }
+            }
+            </script>
+
+            <iframe 
+            src="https://www.pinkbike.com/news/custom-bikes-of-the-dh-world-championships-andorra-2024.html" 
+            title="Pink bike" width="300" style="border:none;">
+
+            </iframe>
+
+            <iframe  name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
 
     </body>
 </html>
